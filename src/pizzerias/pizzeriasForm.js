@@ -26,7 +26,7 @@ class PizzaForm extends Component {
   handleSubmit(event) {
     event.preventDefault();
     axios
-      .post("http://127.0.0.1:8000/create/", {
+      .post("http://127.0.0.1:8000/api/create/", {
         pizzeria_name: this.state.pizzeria_name,
         street: this.state.street,
         city: this.state.city,

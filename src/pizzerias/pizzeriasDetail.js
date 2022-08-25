@@ -19,7 +19,7 @@ class PizzaDetail extends Component {
   deletePizzeria(obj) {
     console.log(obj);
     axios
-      .delete("http://127.0.0.1:8000".concat(obj))
+      .delete("http://127.0.0.1:8000/api".concat(obj))
       .then((response) => {
         console.log(response);
       })

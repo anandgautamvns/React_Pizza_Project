@@ -17,7 +17,7 @@ class PizzaUpdate extends Component {
   handleSubmit(event) {
     event.preventDefault();
     axios
-      .patch("http://127.0.0.1:8000".concat(this.state.obj_to_update.update), {
+      .patch("http://127.0.0.1:8000/api".concat(this.state.obj_to_update.update), {
         description: this.state.value,
       })
       .then((response) => {
